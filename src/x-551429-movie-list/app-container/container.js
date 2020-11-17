@@ -1,8 +1,9 @@
 import {createCustomElement} from '@servicenow/ui-core';
 import snabbdom from '@servicenow/ui-renderer-snabbdom';
-// import "@servicenow/now-modal"
+import containerActions from './actions';
 import view from './view';
-import '../app-content';
+import '../card-items';
+import '@servicenow/now-loader';
 import styles from './container.scss';
 
 
@@ -10,5 +11,10 @@ import styles from './container.scss';
 createCustomElement('x-551429-movie-list', {
 	renderer: {type: snabbdom},
 	view,
-	styles
+	initialState: {
+		movies: [], 
+		isLoading: true,
+	},
+	styles,
+	...containerActions
 });

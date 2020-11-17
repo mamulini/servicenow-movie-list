@@ -1,0 +1,112 @@
+.card{
+  box-shadow: 0 0 18px rgba(214,214,214,.9);
+  width: 22%;
+  min-width: 200px;
+  margin: 10px;
+  background: #ffffff;
+
+  &__wrapper{
+    padding: 5px;
+    display: flex;
+    flex-flow: row wrap;
+    max-width: 80%;
+    // flex: 0 0 80%;
+  }
+
+  &__item{
+    width: 100%;
+  }
+
+  &__img{
+    // max-width: 100%;
+    img{
+      width: 100%;
+    }
+  }
+
+  &__rating{
+    color: goldenrod;
+    font-size: 1em;
+    margin-top: 10px;
+  }
+
+}
+
+
+.wachlist__wrapper{
+  flex: 0 0 20%;
+  background: #ffffff;
+  text-align: center;
+  margin-top: 15px;
+  padding: 10px;
+  font-weight: bold;
+  margin-right: 5px;
+  align-self: start;
+}
+
+.wachlist__title{
+  font-size: 18px;
+  padding: 5px;
+  margin-top: 0;
+}
+
+
+// .movies{  
+//     padding: 5px;
+//     display: flex;
+//     flex-flow: row wrap;
+
+//     &__wrapper{
+//       max-width: 100%;
+//       padding: 0;
+//       display: flex;
+//       justify-content: space-between;
+//       margin: 0 auto;
+//     }
+
+//     &__item{
+//       box-shadow: 0 0 18px rgba(214,214,214,.9);
+//       flex: 0 0 20%;
+//       margin: 10px;
+//       background: #ffffff;
+//     }
+
+//     &__title{
+//       padding: 10px 10px;
+//       margin: 0;
+//       font-size: 1rem;
+//     }
+
+//     &__poster{
+//       max-width: 100%;
+
+//       img{
+//         width: 100%;
+//       }
+//     }
+
+//     &__rating{
+//       color: goldenrod;
+//       font-size: 1em;
+//       margin-top: 10px;
+//     }
+
+//     &__modal{
+//       display: flex;
+//       justify-content: space-between;
+//       width: 100%;
+//     }
+
+//     &__dateWrapper{
+//       display: flex;
+//       justify-content: space-between;
+//       padding: 10px;
+//     }
+
+//     &__overview{
+//       padding: 10px;
+//     }
+//   }
+  
+
+

@@ -15,3 +15,16 @@
   flex-direction: column;
   background: rgba(207, 203, 197, 0.671);
 }
+
+.header{
+  padding: 15px;
+}
+
+.card-items{
+  // padding: 0;
+  display: flex;
+  justify-content: space-between;
+  // margin: 0 auto;
+}
+
+

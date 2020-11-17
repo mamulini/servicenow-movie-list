@@ -1,24 +1,42 @@
-
-
 {
-  "extends": [
-    "prettier",
-    "prettier/standard",
-    "prettier/react",
-    "plugin:react/recommended"
-  ],
+  "parserOptions": {
+    "ecmaVersion": 5
+  },
+  "extends": ["airbnb", "prettier", "plugin:node/recommended"],
   "plugins": ["prettier"],
   "rules": {
-    "prettier/prettier": "error"
+    "prettier/prettier": "on",
+    "no-unused-vars": "warn",
+    "no-console": "off",
+    "func-names": "off",
+    "no-process-exit": "off",
+    "object-shorthand": "off",
+    "class-methods-use-this": "off",
+    "no-bitwise": "off",
+    "no-var": "off",
+    "no-restricted-properties": "off",
+    "no-plusplus": "off",
+    "prefer-destructuring": "off",
+    "prefer-template": "off"
   },
-  "parser": "babel-eslint",
   "env": {
-    "browser": true
+    "jest": true,
+    "es6": false
   },
-  "settings": {
-    "react": {
-      "pragma": "React",
-      "version": "detect"
-    }
+  "globals": {
+    "gs": "readonly",
+    "Class": "readonly",
+    "x_int46_fj_cmp": "readonly",
+    "sn_cmp": "readonly",
+    "GlideRecord": "readonly",
+    "FujitsuIPAMUtils": "readonly",
+    "sn_cmp_api": "readonly",
+    "sn_cloud_api": "readonly",
+    "inputAttributes": "readonly",
+    "GlideDateTime": "readonly",
+    "json": "readonly",
+    "AWSCloudAPIBase": "readonly",
+    "AzureCloudAPIBase": "readonly",
+    "Packages": "readonly"
   }
 }

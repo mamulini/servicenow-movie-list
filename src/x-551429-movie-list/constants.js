@@ -3,7 +3,10 @@ export const MOVIES_FETCH_SUCCEEDED = 'MOVIES_FETCH_SUCCEEDED';
 export const MOVIES_FETCH_FAILED = 'MOVIES_FETCH_FAILED';
 export const ADDED_TO_WACHLIST = 'ADDED_TO_WACHLIST';
 export const REMOVED_FROM_WACHLIST = 'REMOVED_FROM_WACHLIST';
+export const CHANGE_BTN_STYLE = 'CHANGE_BTN_STYLE';
 export const OPENED_MORE_INFO = 'OPENED_MORE_INFO';
 export const CLOSED_MORE_INFO = 'CLOSED_MORE_INFO';
 
 export const API_URL = "https://api.themoviedb.org/3/discover/movie?api_key=3f4ca4f3a9750da53450646ced312397";
+export const API_KEY = "3f4ca4f3a9750da53450646ced312397"
+
