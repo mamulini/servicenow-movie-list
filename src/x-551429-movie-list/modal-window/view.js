@@ -1,5 +1,6 @@
-export default (state) => {
+import { posterNotFound } from "../constants";
 
+export default (state) => {
     const {
         properties: {title, overview, date, path, vote, isOpen} 
     } = state;
@@ -9,7 +10,7 @@ export default (state) => {
             <now-modal opened={isOpen} size="lg">
                 <div className="modal">
                     <div className='modal__img'>
-                        <img src={`https://image.tmdb.org/t/p/w500${path}`}/>
+                        <img src={path ? `https://image.tmdb.org/t/p/w500${path}` : posterNotFound}/>
                     </div>
                     <div className="modal__description">
                         <h2 className="modal__title">{title}</h2>

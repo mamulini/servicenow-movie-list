@@ -1,21 +1,14 @@
 export default (state) => {
-	const {movies, isLoading} = state;
+	const {movies, activePage, totalPages} = state;
 	
 	return (
 		<div className="container">
-			<div className="header">
-				<h1 className="title">The movie list</h1>
-				<p>Choose your favorite movies here!</p>
+			<app-header/>
+			<div className="main"  >
+				<card-items className="card-items" movies={movies}/>
 			</div>
-			<div className="main">
-				{isLoading?
-		 			(<now-loader label="Loading..." size="lg"></now-loader>)
-				:
-					(<card-items className="card-items" movies={movies}/>)		
-				}
-			</div>
+			<app-footer activePage={activePage} totalPages={totalPages}/>
 		</div>	
 		)
 };
 
-<movie-item  className="movie-items-container"/>

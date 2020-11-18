@@ -6,7 +6,6 @@ import '../movies-watchlist';
 import '../modal-window';
 import '@servicenow/now-card';
 import '@servicenow/now-modal';
-import '@servicenow/now-card';
 import styles from './card.scss';
 
 

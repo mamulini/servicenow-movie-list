@@ -1,15 +1,13 @@
 import {createCustomElement} from '@servicenow/ui-core';
 import snabbdom from '@servicenow/ui-renderer-snabbdom';
 import view from './view';
-import '@servicenow/now-card';
-import styles from './watchlist.scss';
+import '@servicenow/now-dropdown';
+import styles from './header.scss';
 
 
-createCustomElement('movies-watchlist', {
+
+createCustomElement('app-header', {
 	renderer: {type: snabbdom},
 	view,
-	properties: {
-		watchlistItems: []
-	},
-	styles,
-});  
+    styles
+});  	

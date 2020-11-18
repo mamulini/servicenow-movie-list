@@ -2,8 +2,7 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
-    // margin-top: -40px;
-    // z-index: 10;
+
     &__description{
         display: flex;
         flex-direction: column;
@@ -12,14 +11,14 @@
 
     &__img{
         img{
-            width: 100%;
+            max-width: 200px;
           }
     }
 
     &__title{
         padding: 10px 10px;
         margin: 0;
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
 
     &__overview{
@@ -34,6 +33,5 @@
 
     &__rating{
         color: goldenrod;
-
     }
 }

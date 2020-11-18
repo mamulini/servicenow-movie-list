@@ -1,15 +1,16 @@
 import {createCustomElement} from '@servicenow/ui-core';
 import snabbdom from '@servicenow/ui-renderer-snabbdom';
 import view from './view';
-import '@servicenow/now-card';
-import styles from './watchlist.scss';
+import styles from './footer.scss';
 
 
-createCustomElement('movies-watchlist', {
+
+createCustomElement('app-footer', {
 	renderer: {type: snabbdom},
 	view,
 	properties: {
-		watchlistItems: []
+		activePage: 1,
+		totalPages : []
 	},
-	styles,
-});  
+    styles
+});  	

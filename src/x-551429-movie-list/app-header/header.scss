@@ -1,0 +1,21 @@
+.header{
+    padding-bottom: 10px;
+    background: #ffffff;
+
+    &__title, &__subtitle{
+      text-align: center;
+      
+    }
+
+    &__title{
+      margin: 0;
+      font-size: 36px;
+      font-weight: bolder;
+    }
+
+    &__subtitle{
+      font-size: 22px;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+  }
