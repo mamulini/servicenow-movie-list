@@ -7,8 +7,7 @@ export default (state) => {
     return(
         <Fragment>
             <div className="card__wrapper">
-                {
-                    movies.length? (
+                {movies.length? (
                         movies.map( item => {
                             const { title, id, poster_path, vote_average } = item; 
                             let btnItems = {
